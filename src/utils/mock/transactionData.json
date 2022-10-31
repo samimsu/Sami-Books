@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "date": "Aug 18, 2022",
+    "description": "McDonald's Lunch",
+    "debit": "Cash on Hand",
+    "credit": "Miscellaneous Expenses",
+    "amount": 25
+  },
+  {
+    "id": 2,
+    "date": "Aug 17, 2022",
+    "description": "KFC Lunch",
+    "debit": "Cash on Hand",
+    "credit": "Miscellaneous Expenses",
+    "amount": 30
+  },
+  {
+    "id": 3,
+    "date": "Aug 17, 2022",
+    "description": "KFC Lunch",
+    "debit": "Cash on Hand",
+    "credit": "Miscellaneous Expenses",
+    "amount": 30
+  },
+  {
+    "id": 4,
+    "date": "Aug 17, 2022",
+    "description": "KFC Lunch",
+    "debit": "Cash on Hand",
+    "credit": "Miscellaneous Expenses",
+    "amount": 30
+  },
+  {
+    "id": 5,
+    "date": "Aug 17, 2022",
+    "description": "KFC Lunch",
+    "debit": "Cash on Hand",
+    "credit": "Food",
+    "amount": 30
+  }
+]

@@ -1,14 +1,44 @@
-import React from 'react';
-// import "./App.css";
-import Dashboard from './components/Dashboard2/Dashboard';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
+import { Sidebar } from '@components/Sidebar';
+import { Dashboard, Transactions, ChartOfAccounts } from '@views';
+import mockCompanyData from '@/mock/company';
 
 function App() {
-  // const [count, setCount] = useState(0);
-
+  const [transactions, setTransactions] = useState(
+    mockCompanyData.transactions,
+  );
   return (
-    <div>
-      <Dashboard />
-    </div>
+    <Router>
+      <div className="flex flex-row">
+        <Sidebar />
+
+        <div className="flex grow p-5 h-screen">
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <Dashboard
+                  company={mockCompanyData}
+                  transactions={transactions}
+                />
+              }
+            />
+            <Route
+              path="/transactions"
+              element={
+                <Transactions
+                  transactions={transactions}
+                  setTransactions={setTransactions}
+                />
+              }
+            />
+            <Route path="/chart-of-accounts" element={<ChartOfAccounts />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 
