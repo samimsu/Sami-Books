@@ -7,7 +7,7 @@ import Input from '@components/Input/Input';
 import Select from '@components/selects/Select';
 import company from '@/mock/company';
 
-export default function TransactionForm({
+export default function NewTransactionForm({
   initialFormState,
   transactions,
   setTransactions,
@@ -60,7 +60,7 @@ export default function TransactionForm({
   );
 }
 
-TransactionForm.propTypes = {
+NewTransactionForm.propTypes = {
   initialFormState: PropTypes.shape({}).isRequired,
   transactions: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
   setTransactions: PropTypes.func.isRequired,

@@ -5,7 +5,7 @@ import { format } from 'date-fns';
 import Button from '@components/Button/Button';
 import Table from '@components/Table/Table';
 import Modal from '@components/Modal/Modal';
-import TransactionForm from '@components/forms/TransactionForm';
+import NewTransactionForm from '@components/forms/NewTransactionForm';
 import EditTransactionForm from '@components/forms/EditTransactionForm';
 
 const TODAYS_DATE = format(new Date(), 'yyyy-MM-dd');
@@ -67,7 +67,7 @@ export default function Transactions({ transactions, setTransactions }) {
         showModal={showModal}
         setShowModal={setShowModal}
       >
-        <TransactionForm
+        <NewTransactionForm
           initialFormState={initialFormState}
           transactions={transactions}
           setTransactions={setTransactions}

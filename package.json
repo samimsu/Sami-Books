@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "lint": "eslint . --ext .js,.jsx",
     "lint:fix": "eslint . --ext .js,.jsx --fix",
+    "format": "prettier app.jsx **/*.jsx --write",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
