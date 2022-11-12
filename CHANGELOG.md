@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.1] - 2022-11-12
+
+### Changed
+
+- package json details
+- package-lock.json
+- home page title
+
 ## [0.1.0] - 2022-10-31
 
 ### Added
