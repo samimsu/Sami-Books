@@ -7,6 +7,7 @@
 - package json details
 - package-lock.json
 - home page title
+- rename GeneralWidget
 
 ## [0.1.0] - 2022-10-31
 
