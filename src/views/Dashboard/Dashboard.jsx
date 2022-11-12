@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// import GeneralWidget from '@components/widgets/GeneralWidget';
-import GeneralWidget from '@components/widgets/GeneralWIdget';
+import GeneralWidget from '@components/widgets/GeneralWidget';
 
 export default function Dashboard({ company, transactions }) {
   const { currency, accounts } = company;
